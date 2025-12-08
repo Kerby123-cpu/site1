@@ -2,17 +2,16 @@ const overlay = document.getElementById('overlay');
 const video = document.getElementById('video');
 const subscribeBtn = document.getElementById('subscribeBtn');
 
-// Видео изначально на паузе
+// Video paused at start
 video.pause();
 overlay.style.display = 'flex';
 
 subscribeBtn.addEventListener('click', () => {
-  // Подключение ProPush
+  // ProPush subscription
   Propush.subscribe().then(() => {
-    // После успешной подписки убираем overlay
     overlay.style.display = 'none';
     video.play();
   }).catch(() => {
-    alert('Подписка не удалась. Попробуйте еще раз.');
+    alert('Subscription failed. Please try again.');
   });
 });
