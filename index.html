@@ -1,27 +1,36 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Видео требует подписки</title>
+<title>Exclusive Video Content</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>Смотрите видео</h1>
+<header>
+  <nav class="menu">
+    <div class="logo">VideoSite</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Videos</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-<div id="container">
-  <video id="video" controls>
+<section class="video-section">
+  <video id="video" autoplay muted loop>
     <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-    Ваш браузер не поддерживает видео.
+    Your browser does not support the video tag.
   </video>
   <div id="overlay">
-    Чтобы продолжить видео — подпишитесь на push уведомления
-    <button id="subscribeBtn">Подписаться</button>
+    <h1>Subscribe to push notifications to watch</h1>
+    <button id="subscribeBtn">Subscribe</button>
   </div>
-</div>
+</section>
 
-<!-- ProPush скрипт -->
+<!-- ProPush -->
 <script src="https://cdn.propush.me/sdk.js"></script>
 <script src="script.js"></script>
 
