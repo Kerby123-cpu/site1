@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Видео требует подписки</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Смотрите видео</h1>
+
+<div id="container">
+  <video id="video" controls>
+    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    Ваш браузер не поддерживает видео.
+  </video>
+  <div id="overlay">
+    Чтобы продолжить видео — подпишитесь на push уведомления
+    <button id="subscribeBtn">Подписаться</button>
+  </div>
+</div>
+
+<!-- ProPush скрипт -->
+<script src="https://cdn.propush.me/sdk.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
